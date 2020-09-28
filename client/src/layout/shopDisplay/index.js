@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         [theme.breakpoints.up('sm')]: {
           marginLeft: theme.spacing(3),
-          width: '30%',
+          width: 'auto',
         },
       },
       searchIcon: {
@@ -121,19 +121,19 @@ const Shop = () => {
                     </Grid>
                 </Grid>
                 
-                {/* <AppBar position="static">
-                    <Toolbar> */}
+                <Grid container>
+                    <Grid item xs={12} sm={4}>
                         <div className={classes.searchContainer} borderColor="text.primary" borderRadius={20}>
-                            <SearchIcon className={classes.searchIcon}/>
-                            <TextField placeholder="Search…" className={classes.searchInput} classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
+                                    <SearchIcon className={classes.searchIcon}/>
+                                    <TextField placeholder="Search…" className={classes.searchInput} classes={{
+                                root: classes.inputRoot,
+                                input: classes.inputInput,
+                            }}
+                            inputProps={{ 'aria-label': 'search' }}
+                            />
                         </div>
-                    {/* </Toolbar>
-                </AppBar> */}
+                    </Grid>
+                </Grid>
           
                 <Wrapper2>
                     {products}
