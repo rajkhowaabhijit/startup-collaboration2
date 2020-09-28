@@ -25,20 +25,17 @@ const useStyles = makeStyles((theme) => ({
     searchContainer: {
         position: 'relative',
         border:`1.5px solid ${theme.palette.primary.dark}` ,
-        paddingRight: theme.spacing(2), 
-        paddingTop: theme.spacing(1), 
         borderRadius: "20px",
         backgroundColor: fade(theme.palette.common.white, .15),
         '&:hover': {
           backgroundColor: fade(theme.palette.common.white, 0.25),
         },
         marginTop: theme.spacing(2),
-        marginRight: theme.spacing(3),
         marginLeft: 0,
         width: '100%',
         [theme.breakpoints.up('sm')]: {
           marginLeft: theme.spacing(3),
-          width: 'auto',
+          width: '30%',
         },
       },
       searchIcon: {
@@ -59,9 +56,6 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('md')]: {
           width: '20ch',
         },
-      },
-      pagination:{
-
       },
 }));
 
