@@ -19,11 +19,7 @@ import Pagination from '@material-ui/lab/Pagination';
 
 const useStyles = makeStyles((theme) => ({
     featuredWrapper : props => ({
-        paddingLeft: theme.spacing(2), 
-        paddingRight: theme.spacing(2), 
-        paddingTop: theme.spacing(2), 
-        paddingBottom: theme.spacing(2), 
-        background: `linear-gradient(${props.color} 0%, rgba(255,255,255,1) 21%, rgba(255,255,255,1) 100%)`, 
+        background: `linear-gradient(rgba(6,188,218,1) 0%, rgba(255,255,255,1) 21%, rgba(255,255,255,1) 100%)`, 
         marginTop: theme.spacing(1),
     }), 
     searchContainer: {
